@@ -1,1 +1,1 @@
-# DESC Cloud Workshop
+# DESC AWS Workshop
