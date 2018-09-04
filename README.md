@@ -8,16 +8,17 @@
 
 ### AWS CLI
 
+MacOS
 ```bash
 $ brew install aws
 ```
-
+Ubuntu
 ```bash
-$ sudo apt-get install aws
+$ sudo apt-get install awscli
 ```
-
+CentOS
 ```bash
-$ sudo yum install aws 
+$ sudo yum install awscli 
 ```
 
 ### Packer
