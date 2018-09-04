@@ -10,7 +10,7 @@
 
 MacOS
 ```bash
-$ brew install aws
+$ brew install awscli
 ```
 Ubuntu
 ```bash
