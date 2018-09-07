@@ -33,6 +33,8 @@ resource "aws_instance" "base" {
     Environment = "Staging"
   }
 
+  # TODO:
+  # Add tag Billing = "QA-02" and apply changes
 }
 
 # ================================================================================

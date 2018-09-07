@@ -33,6 +33,20 @@ resource "aws_instance" "base" {
     Environment = "Staging"
   }
 
+  # TODO:
+  # Add tags - Purpose = "QA"
+
+  connection {
+    user = "ubuntu"
+    private_key = "${file(var.private_key_path)}"
+  }
+
+  provisioner "remote-exec" {
+    inline = [
+      "sudo apt-get update -y",
+      "sudo apt-get install python3 -y",
+    ]
+  }
 }
 
 # ================================================================================
