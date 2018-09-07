@@ -18,4 +18,24 @@ Note:
 - Create EC2 Instance manually. [more...](challenge_02/README.md)
 
 ### Challenge 3
-- Create EC2 Instance with Terraform. [more...](challenge_03/README.md)
+- Create EC2 Instance (Ubuntu) and verify ssh connection with Terraform. [more...](challenge_03/README-C3.md)
+- Update tags
+- Install Python3
+- Verify ssh connection
+
+### Challenge 4
+- Create EC2 instance and run ```remote-exec``` provisioner. [more...](challenge_04/README-C4.md)
+- Install NGINX and cnfigure simple web page
+
+### Challenge 5
+
+
+### Challenge 6
+
+
+
+### Challenge 7
+- 
+
+### Challenge 8
+- Creating EC2 instances, Load Balancers, Subnets. [more...](challenge_08/README-C8.md)
