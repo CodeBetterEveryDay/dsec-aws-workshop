@@ -7,9 +7,7 @@
 variable "aws_access_key" {}
 variable "aws_secret_key" {}
 variable "private_key_path" {}
-variable "key_name" {
-  default = "workshop"
-}
+variable "key_name" {}
 
 # ================================================================================
 # 2. PROVIDERS
@@ -25,22 +23,29 @@ provider "aws" {
 # 3. RESOURCES
 # ================================================================================
 
-resource "aws_instance" "nginx" {
-  ami           = "ami-0181f8d9b6f098ec4"
+resource "aws_instance" "webserver" {
+  ami           = "ami-047bb4163c506cd98"
   instance_type = "t1.micro"
   key_name        = "${var.key_name}"
 
   connection {
-    user        = "ubuntu"
+    user        = "ec2-user"
     private_key = "${file(var.private_key_path)}"
   }
 
   provisioner "remote-exec" {
     inline = [
-      "sudo apt-get update",
-      "sudo apt-get install nginx -y",
-      "sudo service nginx start"
+      "sudo yum update -y",
+      "sudo yum install nginx -y",
+      "sudo service nginx start",
+      "echo '<html><head><title>WebSrv1</title></head><body>DSEC Workshop</p></body></html>' | sudo tee /usr/share/nginx/html/index.html"
     ]
+  }
+
+  tags {
+    Name = "WEB-1",
+    Team = "DSEC-Workshop",
+    Role = "WebServer",
   }
 }
 
@@ -49,5 +54,5 @@ resource "aws_instance" "nginx" {
 # ================================================================================
 
 output "aws_instance_public_dns" {
-    value = "${aws_instance.nginx.public_dns}"
+    value = "${aws_instance.webserver.public_dns}"
 }
