@@ -28,6 +28,8 @@ Note:
 - Install NGINX and cnfigure simple web page
 
 ### Challenge 5
+- Create 2nd NGINX server in a default VPC [more...](challenge_05/README-C5.md)
+- Verify connectivity
 
 
 ### Challenge 6
