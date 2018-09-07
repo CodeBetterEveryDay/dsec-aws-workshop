@@ -8,7 +8,6 @@
 Note:
     
     Listed pre-conditions are required to follow hands-on exercises.
-    
 
 ## CHALLENGES
 
@@ -20,5 +19,3 @@ Note:
 
 ### Challenge 3
 - Create EC2 Instance with Terraform. [more...](challenge_03/README.md)
-
-
