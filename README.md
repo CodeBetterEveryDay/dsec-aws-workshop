@@ -31,10 +31,8 @@ Note:
 - Create 2nd NGINX server in a default VPC [more...](challenge_05/README-C5.md)
 - Verify connectivity
 
-
 ### Challenge 6
-
-
+- Create 1nd and 2nd NGINX server on Amazon Linux and Ubuntu [more...](challenge_06/README-C6.md)
 
 ### Challenge 7
 - 
