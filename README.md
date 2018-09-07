@@ -35,7 +35,7 @@ Note:
 - Create 1nd and 2nd NGINX server on Amazon Linux and Ubuntu [more...](challenge_06/README-C6.md)
 
 ### Challenge 7
-- 
+- Create networking elements (vpc, subnets, security groups) [more...](challenge_07/README-C7.md)
 
 ### Challenge 8
 - Creating EC2 instances, Load Balancers, Subnets. [more...](challenge_08/README-C8.md)
