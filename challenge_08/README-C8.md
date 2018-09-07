@@ -1,5 +1,10 @@
 # NETWORKING
 
+## Diagram
+
+![img](../img/aws6.png)
+
+
 ## New Concepts:
 
 - Running EC2 Instances in multiple Subnets

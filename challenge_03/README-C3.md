@@ -1,5 +1,11 @@
 # Create EC2 Instance Ubuntu
 
+## Diagram
+
+![aws](../img/aws1.png)
+
+
+
 - Create EC2 Instance (Ubuntu) and verify ssh connection with Terraform.
 - Update tags
 - Install Python3
