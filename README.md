@@ -12,7 +12,7 @@ Note:
 ## CHALLENGES
 
 ### Challenge 1
-- Setup AWS Account and AWS CLI on your laptop. [more...](challenge_01/README.md)
+- Setup AWS Account and AWS CLI on your laptop. [more...](Challenge-01-Setup/README.md)
 
 ### Challenge 2
 - Create EC2 Instance manually. [more...](https://aws.amazon.com/ec2)
