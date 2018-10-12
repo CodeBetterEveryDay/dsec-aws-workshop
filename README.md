@@ -18,7 +18,7 @@ Note:
 - Create EC2 Instance manually. [more...](https://aws.amazon.com/ec2)
 
 ### Challenge 3
-- Create EC2 Instance (Ubuntu) and verify ssh connection with Terraform. [more...](challenge_03/README-C3.md)
+- Create EC2 Instance (Ubuntu) and verify ssh connection with Terraform. [more...](Challenge-03-EC2-Provisioner/README-C3.md)
 - Update tags
 - Install Python3
 - Verify ssh connection
