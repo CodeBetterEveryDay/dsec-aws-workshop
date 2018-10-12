@@ -2,9 +2,20 @@
 
 ## Configure AWS Account
 
-- Create AWS account
-- Create IAM user for the workshop (with cli and console access!)
-
+- Create AWS account (aws root)
+- Login to AWS as `root` and create a new user (with `cli` and `console` access)
+```bash
+IAM > Users > Create New User
+```
+- Generate and save user's credentials:
+```bash
+Access Key ID
+Secret Access Key
+```
+- In `IAM` service menu select the new user and grant following permission:
+```bash
+AmazonEC2FullAccess
+``` 
 
 ## Configure your laptop
 
@@ -48,11 +59,6 @@ $ pip install awscli
 aws-cli/1.16.32 Python/3.7.0 Darwin/17.7.0 botocore/1.12.22
 ```
 
-## Configure AWS Account
-- Create aws account
-- Create a user `terraform` (IAM) with console (WebUI) and ssh access rights (admin privileges)
-- Copy user's `aws_access_key` and `aws_secret_key` to your laptop
-
 ## Configure aws cli on your laptop
 - Create a directory `~./aws/`
 - Configure user with profile name `terraform`
@@ -60,4 +66,13 @@ aws-cli/1.16.32 Python/3.7.0 Darwin/17.7.0 botocore/1.12.22
 $ aws configure --profile terraform
 ```
 
+# Install Terraform
 
+## Install Terraform binary
+- Download Terraform from [here](https://www.terraform.io/downloads.html)
+- Unzip the binary to `~/bin`
+- Add the binary to the path (e.g. `export PATH=$PATH:~/bin`)
+
+Note:
+
+    By default Terraform uses the credentials stored in ~/.aws/credentials 
