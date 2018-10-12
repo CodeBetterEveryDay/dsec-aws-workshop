@@ -24,7 +24,7 @@ Note:
 - Verify ssh connection
 
 ### Challenge 4
-- Create EC2 instance and run ```remote-exec``` provisioner. [more...](challenge_04/README-C4.md)
+- Create EC2 instance and run ```remote-exec``` provisioner. [more...](Challenge-04-EC2-WebServer/README-C4.md)
 - Install NGINX and cnfigure simple web page
 
 ### Challenge 5

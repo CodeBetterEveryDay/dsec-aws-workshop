@@ -1,6 +1,5 @@
 # CHALLENGE 3
 
-
 ## Diagram
 
 ![aws](../img/aws1.png)
@@ -22,7 +21,7 @@ Run terraform plan:
 $ terraform plan
 ```
 
-Apply changes described in the `main.tf` file:
+Apply changes described in the `base.tf` file:
 ```bash
 $ terraform apply
 ```
@@ -34,8 +33,8 @@ $ python3
 ```
 - Refactor `base.tf`, move hardcoded variables to the `VARIABLES` section
 ```bash
-region     = "eu-west-1"
-ami = "ami-0181f8d9b6f098ec4""
+region        = "eu-west-1"
+ami           = "ami-0181f8d9b6f098ec4""
 instance_type = "t1.micro"
 ```
 - Apply changes (`terraform plan`, `terraform apply`)
