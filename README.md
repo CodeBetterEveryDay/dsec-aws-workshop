@@ -15,7 +15,7 @@ Note:
 - Setup AWS Account and AWS CLI on your laptop. [more...](Challenge-01-Setup/README.md)
 
 ### Challenge 2
-- Create EC2 Instance manually. [more...](https://aws.amazon.com/ec2)
+- Create EC2 Instance, update tags. [more...](Challenge-02-EC2-Base/README.md)
 
 ### Challenge 3
 - Create EC2 Instance (Ubuntu) and verify ssh connection with Terraform. [more...](Challenge-03-EC2-Provisioner/README.md)
