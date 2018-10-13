@@ -45,11 +45,9 @@ resource "aws_instance" "base" {
   key_name        = "${var.key_name}"
 
   # YOUR CODE GOES HERE - uncomment and add tags.
-  #tags {
-  #  Team = "SysSecInfra",
-  #  ...
-  #  ...
-  #}
+  tags {
+    Team = "DataTeam",
+  }
 }
 
 # ================================================================================
