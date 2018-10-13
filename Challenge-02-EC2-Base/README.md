@@ -48,9 +48,7 @@ BillingDepartment = "IE-DUB-OFFICE"
 Terraform code to add to the resource:
 ```bash
 tags {
-    Team = "SysSecInfra",
-    ...
-    ...
+    Team = "DataEng",
 }
 ```
 
